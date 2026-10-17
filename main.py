@@ -1,6 +1,7 @@
 from datetime import datetime
+from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
-from flask import Flask, Response
+from flask import Flask, Response, request
 
 
 app = Flask(__name__)
@@ -8,7 +9,12 @@ app = Flask(__name__)
 
 @app.get("/")
 def serve_time_svg():
-    now = datetime.now()
+    timezone = request.headers.get("x-vercel-ip-timezone")
+    try:
+        now = datetime.now(ZoneInfo(timezone)) if timezone else datetime.now()
+    except (ZoneInfoNotFoundError, ValueError):
+        now = datetime.now()
+
     total_seconds = now.hour * 3600 + now.minute * 60 + now.second
 
     svg_data = (
