@@ -13,4 +13,4 @@ Super silly; a bit of CSS voodoo; exactly why I made it.
 
 [Mess around with it on CodePen](https://codepen.io/Cubiq-ish/pen/QwpryLz) | [The CSS API trick that inspired it](https://dev.to/janeori/getting-your-ip-address-with-css-and-other-32-bit-api-responses-without-javascript-402h#third-public-demonstration-chrome-only-root-trivial)
 
-<p align="center">![visitor counter](https://count.getloli.com/@TheCubiq-size-python-time?theme=capoo-2&scale=0.5&pixelated=0&darkmode=0)</p>
+:shipit:<p align="center">![visitor counter](https://count.getloli.com/@TheCubiq-size-python-time?theme=capoo-2&scale=0.5&pixelated=0&darkmode=0)</p>
